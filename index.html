@@ -8,42 +8,79 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Open+Sans:wght@300&family=Permanent+Marker&family=Raleway&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Highland Springs Village Golf</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="jumbotron jumbotron-fluid">
         <div>
             <h1>Highland Springs Village Golf</h1>
             <h2></h2>
         </div>
     </header>
 
-    <div>
-        <h2></h2>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h2>Test Header 1</h2>
+            </div>
+            <div class="col">
+                <p>Test content goes here</p>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3">
+                <h2>Test Header 2</h2>
+            </div>
+            <div class="col">
+                <p>Test content goes here</p>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3">
+                <h2>Test Header 3</h2>
+            </div>
+            <div class="col">
+                <p>Test content goes here</p>
+            </div>
+        </div>
     </div>
 
 <footer>
-    <div>
-        <h5>Links</h5>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Men's Club</a></li>
-            <li><a href="#">Travel Club</a></li>
-        </ul>
-    </div>
-    <div>
-        <h5>Social</h5>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">YouTube</a>
-    </div>
-    <div>
-        Tel: ###-###-####
-        Email: test@test.test
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-sm-2 offset-1"></div>
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Men's Club</a></li>
+                    <li><a href="#">Travel Club</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-5 text-center">
+                <h5>Social</h5>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <div class="col-sm-4">
+                Tel: ###-###-#### <br />
+                Email: test@test.test
+            </div>
+        </div>
     </div>
 </footer>
 
