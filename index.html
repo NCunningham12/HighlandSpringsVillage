@@ -60,7 +60,7 @@
                 <h2>About Us</h2>
             </div>
             <div class="col-sm-4 order-sm-last col-md-3">
-                <img src="img/tee-address-1.JPG" height="400vh" alt="HS Golfer">
+                <img src="img/putt-ball-close.JPG" height="420vh" alt="HS Golfer">
             </div>
             <div class="col">
                 <p>The Highland Springs Village Golfing Community is made up of three separate player clubs. The Men's Club and Women's Club are clubs comprised of players of all skill levels, with the requirement being that members be a resident of Highland Springs Village. <br /><br />The Travelling Golf Club, which is for both men and women aged 55 and above, whether they be residents and non-residents, has monthly golf tournaments at different locations each month.</p>
@@ -71,8 +71,8 @@
             <div class="col-12 text-center">
                 <h2>Course Details</h2>
             </div>
-            <div class="col-md-8 mx-auto">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <div class="col-md-10 mx-auto">
+                <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -81,7 +81,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/putt-ball-close.JPG" alt="Pic 1" />
+                            <img class="d-block w-100" src="img/tee-address-1.JPG" alt="Pic 1" />
                             <div class="carousel-caption">
                                 <h3></h3>
                                 <p class="d-none d-sm-block"></p>
@@ -119,28 +119,89 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12">
-                <ul>
-                    <li>Private Course: 9 Holes, Par 29</li>
-                    <li>1597 Total Yards</li>
-                    <li>Slope: 85</li>
-                    <li>Rating: 55.6</li>
-                    <li>Challenging course requiring accuracy</li>
-                    <li>Greens with subtle undulations</li>
-                </ul>
+
+            <div class="col-10 mx-auto text-center" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Course Type
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Private Executive Course <br />
+                      9 Holes <br />
+                      Par 29
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">
+                            Total Yards
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            1597 yards
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Specific Ratings
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Slope: 85 <br />
+                            Overall Rating: 55.6
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Unique Details
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Challenging course requiring accuracy <br />
+                            Greens with subtle undulations
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
-        </div>
     </div>
+
+                                    <!-- CARD OPTION FOR UL -->
+                <!-- <ul class="list-group  list-group-flush text-center">
+                        <li class="list-group-item">Private Course: 9 Holes, Par 29</li>
+                        <li class="list-group-item">1597 Total Yards</li>
+                        <li class="list-group-item">Slope: 85</li>
+                        <li class="list-group-item">Rating: 55.6</li>
+                        <li class="list-group-item">Challenging course requiring accuracy</li>
+                        <li class="list-group-item">Greens with subtle undulations</li>
+                    </ul> -->
 
     <div class="container">
         <div class="row">
             <div class="col col-12 text-center">
                 <h2>Contact</h2>
             </div>
-            <div class="col-sm-4">
+            <div class="col-6 justify">
                 <h5>Our Address</h5>
                 <address>
                     Highland Springs Ave<br />
@@ -148,9 +209,9 @@
                     U.S.A.
                 </address>
             </div>
-            <div class="col">
-				<a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-            	<a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> exampleemail@oldfart.com</a>
+            <div class="col-6">
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> exampleemail@oldfart.com</a>
             </div>
         </div>
         <div class="row row-content">

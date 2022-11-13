@@ -48,3 +48,18 @@ header h2 {
 #jumbotronTitle {
     background-color: rgba(0,0,0,0.5);
 }
+
+#accordion .card-header {
+    background-color: #006326;
+    color: white;
+}
+
+#accordion .card-body{
+    background-color: rgba(0,70,0,0.5);
+    color: black;
+    font-weight: 900;
+}
+
+#accordion .btn-link {
+    color: white;
+}
