@@ -20,19 +20,31 @@ header h2 {
     color: #006326;
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(#ceffda, white);
     padding: 20px 0;
 }
 
 .jumbotron {
-    padding: 30px;
-    background-image: linear-gradient(to right, #007e15, #19c767, #005014);
+    margin: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url(../img/bronze-statue.JPG);
+    background-size: cover;
+    background-position: 0% 25%;
     color: white;
+}
+
+.navbar {
+    background-color: #005315;
 }
 
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+}
+
+#jumbotronTitle {
+    background-color: rgba(0,0,0,0.5);
 }
