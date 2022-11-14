@@ -1,15 +1,26 @@
-/* font-family: 'Kanit', sans-serif;
+/* font-family: 'Acme', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Kanit', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+font-family: 'Roboto', sans-serif;
+font-family: 'Russo One', sans-serif; */
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Cabin", sans-serif;
+    background-color: #00ff621f;
+    font-size: larger;
 }
 
-h1, h2, h3 {
-    font-family: "Raleway", sans-serif;
+#jumbotronTitle h1, #jumbotronTitle h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    text-shadow: 3px 4px black;
+}
+
+h2, h3 {
+    font-family: 'Russo One', sans-serif;
 }
 
 h2 {
@@ -21,7 +32,7 @@ header h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#ceffda, white);
+    background-image: linear-gradient(#00701863, rgb(179, 250, 196));
     padding: 20px 0;
 }
 
@@ -62,4 +73,18 @@ header h2 {
 
 #accordion .btn-link {
     color: white;
+}
+
+#feedbackModal .modal-header {
+    background-color: #005315;
+    color: white;
+}
+
+#feedbackModal .modal-body {
+    background-color: #00701863;
+}
+
+#about-img {
+    border: 2px solid black;
+    box-shadow: 7px 7px 5px;
 }
