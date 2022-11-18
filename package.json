@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/NCunningham12/HighlandSpringsVillage.git"
   },
-  "author": "Nathan Cunningha",
+  "author": "Nathan Cunningham",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NCunningham12/HighlandSpringsVillage/issues"
@@ -22,6 +22,7 @@
     "lite-server": "^2.6.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"

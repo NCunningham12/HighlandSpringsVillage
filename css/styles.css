@@ -88,3 +88,7 @@ header h2 {
     border: 2px solid black;
     box-shadow: 7px 7px 5px;
 }
+
+#boardHeader {
+    background-color: #005315;
+}
