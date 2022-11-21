@@ -11,6 +11,8 @@ body {
     font-family: "Cabin", sans-serif;
     background-color: #00ff621f;
     font-size: larger;
+    margin: 0;
+    padding: 0;
 }
 
 #jumbotronTitle h1, #jumbotronTitle h2 {
@@ -34,6 +36,7 @@ header h2 {
 .site-footer {
     background-image: linear-gradient(#00701863, rgb(179, 250, 196));
     padding: 20px 0;
+    margin: 0;
 }
 
 .jumbotron {
@@ -91,4 +94,20 @@ header h2 {
 
 #boardHeader {
     background-color: #005315;
+}
+
+#course-section {
+    background-color:#02993c;
+    background-size: cover;
+}
+
+#course-section h2{
+    color: white;
+}
+
+#board {
+    background-color:#02993c;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
