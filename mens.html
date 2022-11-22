@@ -4,17 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highland Springs Men's Club</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin:wght@400;500;700&family=Kanit:wght@200&family=Open+Sans:wght@300&family=Permanent+Marker&family=Raleway&family=Roboto:wght@100;300;400;500;700;900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <script src="https://kit.fontawesome.com/c62da047c3.js" crossorigin="anonymous"></script>
+    
+    <title>Highland Springs Village Golf</title>
 </head>
+    
 <body>
-    <!-- Includes:
-    -Points Leaderboard (table)
-    -Past Tourney Results (list)
-    -Upcoming Tournaments
-    -Individual Handicaps (Alpha Order)
-    -Bob's Soapbox (ask for formatting help)
-    -Game Highlight? (card)
-    -Player of Month?
- -->
+    
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/HSV4Gold.png" class="img-fluid" alt="Highland Springs Logo">
+                </div>
+                <div class="col-7 col-sm-9 col-md-10 text-center align-self-center" id="jumbotronTitle">
+                    <h1>Highland Springs Village</h1>
+                    <h2 class="text-white">Golfing Community</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="img/HSV4Gold.png" height="40" alt="HS Logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#highlandNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="highlandNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-xs"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-info fa-xs"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course"><i class="fa fa-address-card fa-xs"></i> Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-golf-ball-tee fa-xs"></i> Men's Club</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-road fa-xs"></i> Travel Club</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shop fa-xs"></i> Pro Shop</a></li>
+                </ul>
+                <span class="navbar-text ml-auto" >
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#feedbackModal">
+                        Leave Feedback
+                    </button>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="feedbackModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Leave Feedback</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="areaCode" class="col-md-2 col-form-label">Contact Phone #</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area Code" />
+                                </div>
+                                <div class="col-7">
+                                    <input type="tel" class="form-control" name="telNum" placeholder="Phone Number" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col offset-md-2">
+                                    May we contact you?
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" /> 
+                                        <label for="contactYes" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" /> 
+                                        <label for="contactNo" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <input type="button" class="ml-3 btn btn-secondary" value="Cancel" data-dismiss="modal">
+                                <input type="button" class="ml-3 btn btn-success" value="Submit Feedback">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Includes: -->
+    <div class="container">
+
+    <!-- -Points Leaderboard (table) -->
+        <div class="row">
+            <div class="col">
+                <h2>Points Leaderboard</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Category</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td>Stat</td>
+                                <td>Stat</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>Stat</td>
+                                <td>Stat</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>Stat</td>
+                                <td>Stat</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>Stat</td>
+                                <td>Stat</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>Stat</td>
+                                <td>Stat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <!-- -Past Tourney Results (list) -->
+    <!-- -Upcoming Tournaments -->
+    <!-- -Individual Handicaps (Alpha Order) -->
+    <!-- -Bob's Soapbox (ask for formatting help) -->
+    <!-- -Game Highlight? (card) -->
+    <!-- -Player of Month? -->
+    </div>
+
 </body>
 </html>
